@@ -1,9 +1,5 @@
 # Octave Convolution
 
-<div class="imgcap">
-<img src="./figures/lame_explain.png" width="70%">
-</div>
-
 PyTorch implementation and a breif explanation of Octave convolution from https://arxiv.org/pdf/1904.05049.pdf. 
 
 Octave convolution can be used as a replacement for vanilla convolution. It has been demonstrated by the authors that similar (sometimes better) accuracy can be achieved using octave convolution while saving a huge number of flops required. Model size in case of octave and vanilla convolutions is same. 
