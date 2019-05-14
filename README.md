@@ -1,6 +1,8 @@
 # Octave Convolution
 
-![](./figures/lame_explain.png)
+<div class="imgcap">
+<img src="./figures/lame_explain.png" width="70%">
+</div>
 
 PyTorch implementation and a breif explanation of Octave convolution from https://arxiv.org/pdf/1904.05049.pdf. 
 
@@ -14,7 +16,9 @@ When going from high frequency input to low frequency output (HtoL path), a 2x2 
 
 Similarly when going from Low Frequency input to high frequency output (LtoH path), a vanilla convolution is topped with a bilinear interpolation to upsample the low resolution conv output. So, the LtoH path is `bilenear_interpolation(vanilla_convolution(in_low))`.
 
-![](./figures/top_level.png)
+<div class="imgcap">
+<img src="./figures/top_level.png" width="70%">
+</div>
 
 At the heart of Octave convolution lies the concept of $\alpha$ (ratio of the total channels which are used by low frequency convolutions). For the first convolution layer, there is no low frequency input channel, so $\alpha_{in} = 0$.
 
